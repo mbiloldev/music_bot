@@ -5,7 +5,7 @@ from aiogram import Bot, Dispatcher
 
 from config import BOT_TOKEN
 from handlers import start, search
-from utils.cleanup import clean_downloads
+from cleanup import clean_downloads
 
 
 async def main():
