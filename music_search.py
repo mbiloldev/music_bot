@@ -7,8 +7,6 @@ def search_music(query: str, limit: int = 5) -> list[dict]:
         "quiet": True,
         "extract_flat": True,
         "skip_download": True,
-        "default_search": f"ytsearch{limit}",
-    }
 
     with yt_dlp.YoutubeDL(ydl_opts) as ydl:
         info = ydl.extract_info(query, download=False)
