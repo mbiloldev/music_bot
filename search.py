@@ -4,8 +4,8 @@ from aiogram import Router, types, F
 from aiogram.types import FSInputFile
 
 from services.music_search import search_music
-from services.downloader import download_audio
-from keyboards.inline import results_keyboard
+from downloader import download_audio
+from inline import results_keyboard
 
 router = Router()
 
