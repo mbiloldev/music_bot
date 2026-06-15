@@ -3,7 +3,7 @@ import os
 from aiogram import Router, types, F
 from aiogram.types import FSInputFile
 
-from services.music_search import search_music
+from music_search import search_music
 from downloader import download_audio
 from inline import results_keyboard
 
