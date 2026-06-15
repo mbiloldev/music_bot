@@ -8,8 +8,6 @@ def search_music(query: str, limit: int = 5) -> list[dict]:
     with yt_dlp.YoutubeDL(ydl_opts) as ydl:
         info = ydl.extract_info(query, download=False)
 
-    results = []
-    for entry in info.get("entries", []):
         results.append({
             "id": entry["id"],
             "title": entry.get("title", "Noma'lum"),
