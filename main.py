@@ -4,7 +4,7 @@ import logging
 from aiogram import Bot, Dispatcher
 
 from config import BOT_TOKEN
-from handlers import start, search
+import start, search
 from cleanup import clean_downloads
 
 
