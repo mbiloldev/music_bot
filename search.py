@@ -3,14 +3,6 @@ import os
 from aiogram import Router, types, F
 from aiogram.types import FSInputFile
 
-from music_search import search_music
-from downloader import download_audio
-from inline import results_keyboard
-
-router = Router()
-
-# Foydalanuvchi qidirgan natijalarni vaqtincha saqlash uchun (xotirada)
-search_cache: dict[int, dict[str, dict]] = {}
 
 
 @router.message(F.text)
